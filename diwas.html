@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcAor6qE7JilUG5RsJ_KFkl1tZ0Tnz8l-_A&s');
+            background-size: 110%;
+            background-position: center;
+        }
+
+        .bride, .groom {
+            max-width: 250%;
+            max-height: 100%;
+            position: absolute;
+            bottom: 0;
+            transform-origin: bottom;
+            animation-name: bridegroomanimation;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        .bride {
+            left: 53%;
+        }
+
+        .groom {
+            right: 53%;
+        }
+
+        .wedding-invitation {
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translate(-40%, 50%);
+            text-align: center;
+            font-size: 1.2rem;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 7px;
+        }
+
+        .wedding-invitation img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .wedding-invitation p {
+            margin: 5px 0;
+        }
+
+        @keyframes bridegroomanimation {
+            0%, 20% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="bride" src="https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/448060341_122109375332338505_2293773907271460052_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=X2IwfOUVwoQQ7kNvgGok1Y7&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=AKll9MdWqDdN-gnlkgDnXeP&oh=00_AYBqnfIm82XrhOjLCRoeLI190F3mJEDJEh6t5cW-fERZLA&oe=676074C9" alt="Bride">
+        <img class="groom" src="img.jpg" alt="Groom">
+        <div class="wedding-invitation">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCCTgYkilus1JpzsIm_lSFKW_wrCcmT8xhyg&s" alt="Invitation Icon">
+            <p style="color: red; font-size: 46px;"><b>Shital & Diwas</b></p>
+            <p>invite you to celebrate their wedding</p>
+            <p>on Monday, 24th April 2028</p>
+            <p>at 5:00 PM</p>
+            <p>Godawari Municipality-6, Lalpur, Kailali</p>
+        </div>
+    </div>
+</body>
+</html>
